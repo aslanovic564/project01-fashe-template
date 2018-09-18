@@ -1,0 +1,729 @@
+/* comon style */
+@font-face {
+    font-family: Montserrat;
+}
+*{
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    font-family: Montserrat;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+
+}
+
+#hedSection {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+#hedSection .nav {
+    background-color: rgb(226, 225, 225);
+}
+
+.box {
+    height: 30px;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    text-align: center
+}
+
+#hedSection .nav .rowbas ul {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding-left: 42px;
+    padding-top: 6px;
+}
+
+#hedSection .nav .rowbas ul a{
+    width: 15px;
+    height: 15px;
+    padding: 3px 15px;
+    float: left;
+    position: relative;
+    top: -10px;
+    left: 0px;
+    background-color: #E2E1E1;
+
+}
+
+#hedSection .nav .rowbas ul  a i{
+    height: 15px;
+    color: #7B7F88;
+    font-weight: bolder;
+    transition-duration: 0.1s;
+    padding: 0px 15px;
+    float: left;
+    position: relative;
+    top: 15px;
+    left: 0px
+}
+
+#hedSection .nav ul a:hover i {
+    color: red;
+}
+
+#hedSection .nav div p {
+    padding: 5px;
+    color: rgb(146, 141, 141);
+    font-size: 14px
+}
+
+
+#hedSection .rowbas div:nth-of-type(3) {
+    position: relative;
+}
+
+#hedSection .rowbas div:nth-of-type(3) button:nth-of-type(1){
+    position: absolute;
+    border: transparent;
+    background-color: #E2E1E1;
+    right: 24px;
+    width: 58px;
+    height: 20px;
+}
+#hedSection .rowbas div:nth-of-type(3) button:nth-of-type(1) i{
+    position: absolute;
+    left: 30px;
+    top: 2px;
+    color: red;
+}
+#hedSection .rowbas div:nth-of-type(3) button:nth-of-type(1):focus~button {
+    display: inline-block;
+    outline: none;
+
+}
+#hedSection .rowbas div:nth-of-type(3) button:nth-of-type(2),
+#hedSection .rowbas div:nth-of-type(3) button:nth-of-type(3) {
+    position: absolute;
+    right: 24px;
+    width: 58px;
+    height: 30px;
+    background: white;
+    display: none;
+    z-index: 10;
+}
+
+#hedSection .rowbas div:nth-of-type(3) button:nth-of-type(2) {
+    position: absolute;
+    top: 25px;
+    right: 24px;
+    border-bottom: none;
+    z-index: 15;
+}
+
+#hedSection .rowbas div:nth-of-type(3) button:nth-of-type(2):hover {
+    background: rgb(201, 42, 42);
+    color: white;
+}
+
+#hedSection .rowbas div:nth-of-type(3) button:nth-of-type(3) {
+    top: 51px;
+    right: 24px;
+    border-top: none;
+    z-index: 16;
+}
+
+#hedSection .rowbas div:nth-of-type(3) button:nth-of-type(3):hover {
+    background: rgb(201, 42, 42);
+    color: white;
+}
+
+/* .box-nav {
+    height: 70px;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    
+    overflow: hidden
+} */
+
+#headfashe {
+    padding: 5px;
+    color: rgb(146, 141, 141);
+    font-size: 14px
+}
+
+/* nav SECTION */
+
+
+
+#navSec {
+    position: sticky;
+    z-index: 10;
+    top: 0px;
+    background-color: #FFFFFF;
+}
+
+.logo {
+    padding: 15px;
+}
+
+.logo img{
+    width: 60%;
+}
+.navSec-menu{
+    padding-top: 19px;
+   margin-left: 120px;
+}
+.navSec-menu-item{
+    position: relative;
+    padding: 0 15px;
+}
+
+.navSec-menu-item a{
+    padding: 2px;
+    color: #888888;
+    text-decoration: none;
+}
+
+.dropdown{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 20px;
+    left:10px;
+    background: #000;
+    transition: .5s;
+    opacity: 0;
+}
+    
+.navSec-menu li:hover .dropdown{
+    position: absolute;
+    top: 50px;
+    opacity: .5;
+    background: #000;
+}
+.navSec-icon span{
+   padding: 15px 10px;
+   font-size: 20px;
+}
+.navSec-icon span:first-child{
+  padding-left: 100px;
+  border-right: 1px solid slategray;
+}
+
+/* ilk sehife */
+
+#ilkSec {
+    width: 100%;
+    position: relative;
+    height: 550px;
+}
+
+#ilkSec img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 550px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.rowilk p {
+    text-transform: capitalize;
+    position: absolute;
+    font-size: 20px;
+    top: -600px;
+    left: 560px;
+    transition: 1s;
+    z-index: 2;
+    overflow: hidden;
+}
+.rowilk h1{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 50px;
+    position: absolute;
+    top: -660px;
+    left: 468px;
+    z-index: 2;
+    transition: 2s;
+    overflow: hidden;
+}
+#ilkSec .rowilk button{
+    color: black;
+    text-transform: capitalize;
+    position: absolute;
+    bottom: -500px;
+    left: 700px;
+    border-radius: 30px;
+    width: 150px;
+    height: 50px;
+    border: none;
+    transition: 3s;
+    overflow: hidden;
+}
+.rowilk button a{
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    padding-top: 12px;
+    box-sizing: border-box;
+    text-decoration: none; 
+     width: 153px;
+    height: 50px;
+    transition: 2s;
+
+}
+.overlay:hover p{
+    top: 100px;
+    left: 670px;
+    color: white;
+
+}
+.overlay:hover h1{
+    top: 160px;
+    left: 580px;
+    color: white;
+}
+ .overlay:hover button {
+    /* background-color: white; */
+    top: 300px;
+    left: 600px;
+}
+.overlay button:hover a{
+    background-color: red;
+    color: white;
+}
+
+/* ikinci sehifem  */
+
+#ikinciSec{
+    width: 100%;
+    height: 880px;;
+    position: relative;
+    top: 0;
+    overflow: hidden;
+}
+.row-ilksec{
+    margin: 0px 60px;
+   
+}
+.boxikisec {
+    position: relative;
+    border: 1px solid transparent;
+    height: 840px;
+    box-sizing: border-box;
+    text-align: center;
+   
+}
+
+.boxikisec .bolme1 {
+    position: relative;
+    top: 0px;
+    border: 1px solid transparent;
+    height: 480px;
+    margin: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.boxikisec .bolme1:hover img{
+    transform: scale(1.1)
+}
+.boxikisec .bolme2:hover img{
+    transform: scale(1.1)
+}
+.boxikisec .bolme2 {
+    background-color: #F2F2F2; 
+    position: relative;
+    top: 0px;
+    border: 1px solid transparent;
+    height: 320px;
+    margin: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#ikinciSec .row-ilksec .boxikisec .bolme1 a {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 160px;
+    height: 50px;
+    position: absolute;
+    left: 125px;
+    top: 400px;
+    padding-top: 16px;
+}
+#ikinciSec .row-ilksec .boxikisec .bolme1 a:hover {
+    transform: matrix(a, b, c, d, tx, ty);
+    background-color: rgb(139, 21, 21);
+    color: white;
+}
+#ikinciSec .row-ilksec .boxikisec .bolme2 a:hover{
+    transform: matrix(a, b, c, d, tx, ty);
+    background-color: rgb(139, 21, 21);
+    color: white;
+}
+#ikinciSec .row-ilksec .boxikisec .bolme2 a{
+    position: absolute;
+    top: 250px;
+    left: 125px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 160px;
+    height: 50px;
+    padding-top: 16px;
+   
+}
+#ikinciSec .row-ilksec .boxikisec .bolme2 span a{
+    position: absolute;
+    top: 200px;
+    left: 130px;
+    width: 180px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    
+}
+#ikinciSec img{
+    width: 100%;
+    transition: all 0.6s;
+    opacity: 1;
+}
+.row-ilksec .boxikisec .bolme2>h1{
+    padding-top: 70px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.row-ilksec .boxikisec .bolme2 h1, p, span,{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+ 
+
+/* ucuncuSec */
+#ucuncuSec{
+    text-align: left;
+    width: 100%;
+    height: 650px;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    top: 0
+}
+#uc-secBasliq{
+   
+
+}
+.rowsec-3{
+    height: 60px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    margin: 70px;
+    margin-bottom: 50px;
+   
+}
+.rowsec-3 h1{
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 0;
+    left: 0px;
+    padding-top: 7px
+}
+.rowsec-4{
+    margin: 0px 70px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.rowsec-img{
+    position: relative;
+    width: 270px;
+    height: 360px;
+    border: 1px solid transparent;
+    overflow: hidden;
+    
+}
+.rowsec-4 .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 340px;
+    height: 360px;
+    transition: 0.7s;
+}
+.overlay:hover{
+    background-color: rgba(46, 40, 40, 0.452);
+
+}
+.rowsec-4 .overlay i{
+    opacity: 1;
+    position: absolute;
+    top: -114px;
+    right: 14px;
+    font-size: 18px;
+    transition: 0.5s;
+}
+.rowsec-4 .overlay a{
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    padding-top: 6px;
+    padding-left: 20px;
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: black;
+    border-radius: 30px;
+    bottom: -120px;
+    left: 90px;
+    transition: 0.5s;
+   
+}
+.overlay:hover a{
+    background-color: black;
+    bottom: 20px;
+    /* left: 70px; */
+   
+}
+.overlay:hover i{
+    top: 14px;
+    right: 14px;
+   
+}
+#ucuncuSec .rowsec-img:last-child h6{
+    background-color: #E65540
+}
+#ucuncuSec .rowsec-img h6{
+    text-transform: capitalize;
+    font-size: 13px;
+    color: white;
+    padding-left: 9px;
+    padding-top: 2px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 20px;
+    background-color: #66A8A6;
+    border: 1px solid transparent;
+    border-radius: 30px;
+}
+.rowsec-5{
+    margin: 0px 70px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.row-text{
+    position: relative;
+    width: 270px;
+    height: 60px;
+    /* background-color: #E65540; */
+    border: 1px solid transparent;
+    overflow: hidden;
+}
+.rowsec-5 .row-text p{
+    word-spacing: 4px;
+    text-transform: capitalize;
+    padding: 0;
+    font-size: 15px 
+   
+}
+.rowsec-5 .row-text li{
+    float: left;
+   list-style: none;
+   padding-left: 5px ;
+   /* text-decoration: line-through */
+}
+.rowsec-5 .row-text :nth-child(3){
+    text-decoration: line-through;
+}
+.rowsec-5 .row-text :nth-child(4){
+    color: #E65540
+}
+
+/* dorduncu SEHIFEM */
+#dorduncuSec{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    background-color: #F2F2F2;
+   
+}
+#dorduncuSec .rowsec-6 .foursec-col{
+    position: relative;
+     top: 50px;
+    left: 0px
+}
+.foursec-col{
+    width: 520px;
+    height: 400px;
+    background-color: #E65540;
+    margin: 0px 95px;
+    overflow: hidden;
+}
+#dorduncuSec .rowsec-6 .foursec-col h5{
+    position: absolute;
+    top: 195px;
+    left: 221px;
+    color: white;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 0.1cm
+}
+#dorduncuSec .rowsec-6 .foursec-col h4{
+    position: absolute;
+    top: 240px;
+    left: 150px;
+    color: white;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.2cm
+}
+#dorduncuSec .rowsec-6 .foursec-col img{
+    transition: 0.2s;
+}
+#dorduncuSec .rowsec-6 .foursec-col img:hover{
+    transform: scale(1.1);
+}
+#dorduncuSec .rowsec-6 .foursec-col a:hover{
+    text-decoration: underline;
+    color: white;
+}
+#dorduncuSec .rowsec-6 .foursec-col a{
+    position: absolute;
+    top: 320px;
+    left: 190px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.2cm;
+    text-decoration: none;
+}
+#dorduncuSec .rowsec-6 div:nth-of-type(3) a{
+    position: absolute;
+    top: 320px;
+    left: 190px;
+    color: rgb(131, 11, 11);
+    font-size: 13px;
+    text-transform: capitalize;
+    letter-spacing: none;
+    text-decoration: none;
+}
+#dorduncuSec .rowsec-6 div:nth-of-type(3) h2{
+    text-decoration: line-through;
+    position: absolute;
+    top: 340px;
+    left: 240px;
+    color: rgb(131, 11, 11);
+    font-size: 13px;
+    text-transform: capitalize;
+    letter-spacing: none;
+}
+#dorduncuSec .rowsec-6 div:nth-of-type(3) h3{
+    text-decoration: line-through;
+    position: absolute;
+    top: 340px;
+    left: 290px;
+    color: rgb(131, 11, 11);
+    font-size: 13px;
+    text-transform: capitalize;
+    letter-spacing: none;
+    text-decoration: none;
+}
+
+
+/* fiwe Section */
+
+#fiweSec{
+    width: vw;
+    
+}
+.fiweSec-row{
+    padding-top: 150px;
+    height: 600px;
+}
+.fiwesec-col{
+    width: 100%;
+    height: 470px;
+    position: relative;
+    top: 10px;
+    left: 200px;
+    text-align: left;
+    word-break: initial;
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.5;
+    overflow: hidden;
+    /* transition: 0.3s */
+}
+.fiwesec-col a{
+    text-decoration: none;
+    height: 430px;
+    overflow: hidden;
+}
+#fiweSec .row .box h1{
+    font-size: 30px;
+    text-transform:uppercase;
+    font-weight: bold;
+    padding-top: 80px
+
+}
+#fiweSec .fiweSec-row .fiwesec-col p{
+    height: 30px;
+    padding:40px 0;
+    font-size: 13px
+}
+#fiweSec .fiweSec-row .fiwesec-col b{
+    font-size: 13px
+}
+#fiweSec .fiweSec-row .fiwesec-col a h1{
+    color: black;
+    transition: 0.3s;
+}
+#fiweSec .fiweSec-row .fiwesec-col a img{
+    transition: 0.3s;
+   
+}
+#fiweSec .fiweSec-row .fiwesec-col a img:hover{
+    transform: scale(1.1);
+}
+#fiweSec .fiweSec-row .fiwesec-col a h1:hover{
+    color: #E65540
+}
+/* Six section */
+
+#sixsection{
+    width: vw;
+    position: relative;
+    top: 100px;
+    height: 400px;
+    /* opacity: 0.3; */
+}
+.sixsec-col{
+    height: 300px;
+
+    box-sizing: border-box;
+}
+#sixsection .sixsec-col img{
+    width: calc(100%/5 - 6px);
+    
+
+}
